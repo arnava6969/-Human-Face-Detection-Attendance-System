@@ -6,7 +6,7 @@ from datetime import datetime
 from openpyxl import Workbook, load_workbook
 
 # Absolute path to the folder containing images
-path = 'C:/Users/Arnava/Downloads/Auto_Att-Opencv/ImageAttendance'
+path = '/ImageAttendance'
 
 # Ensure the ImageAttendance directory exists
 if not os.path.exists(path):
@@ -49,7 +49,7 @@ def findEncodings(images):
 
 # Function to mark attendance in Excel
 def markAttendance(name):
-    file_path = 'C:/Users/Arnava/Downloads/Auto_Att-Opencv/Attendance.xlsx'
+    file_path = '/Attendance.xlsx'
     now = datetime.now()
     dateString = now.strftime('%Y-%m-%d')
     timeString = now.strftime('%H:%M:%S')
