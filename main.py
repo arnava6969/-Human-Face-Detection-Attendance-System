@@ -2,14 +2,14 @@ import cv2
 import face_recognition
 
 # Load images
-imgElon = face_recognition.load_image_file(r'C:\Users\Arnava\Downloads\Auto_Att-Opencv\ImageBasic\W.jpg')
+imgElon = face_recognition.load_image_file(r'\ImageBasic\W.jpg')
 if imgElon is None:
     raise Exception("Reference image not found!")
 
 imgElon = cv2.cvtColor(imgElon, cv2.COLOR_BGR2RGB)  # Convert image to RGB
 
 # Load the test image
-imgTest = face_recognition.load_image_file(r'C:\Users\Arnava\Downloads\Auto_Att-Opencv\ImageBasic\Elon_Test.jpg')
+imgTest = face_recognition.load_image_file(r'\ImageBasic\Elon_Test.jpg')
 if imgTest is None:
     raise Exception("Test image not found!")
 
